@@ -1,38 +1,16 @@
 ---
 layout: default
 ---
-# Who am I?
 
-I'm a Programmer, or "Software Engineer" if we're being fancy. I started programming in 2019, and so as of writing this have 5 years of experience in the field. 
-I completed a Diploma and Bachelor's degree of Game Development at SAE Sydney, which took 2 years, and then worked for Spectre Studios, 
-then VHS Studios (Spectre was acquired), then at Fenix Studios, which was formed from many of the people who made up Spectre. 
+Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
-## Experience
+[Link to another page](./another-page.html).
 
-I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system and C++.
+There should be whitespace between paragraphs.
 
-*	Unreal Engine (4/5)
-*	C++
-*   Unity
-*   C#
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Projects
-
-## University Projects
-I worked on a few projects at SAE, but as they were some of my first work and only small in scale, they've been grouped into a single page.
-
-[Uni Projects](./uniprojects.html).
-
-## Emergisim
-
-Emergisim is UE4 powered VR medical training software with First Responder and Military applications. 
-I came onto the project a fair ways into development, and worked mostly on creating new medical treatments 
-to perform in the project, and level management systems (For keeping track of player progress).
-
-
-## Human Park
-
-[Human Park](./humanpark.html).
+# Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
