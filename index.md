@@ -26,8 +26,17 @@ I worked on a few projects at SAE, but as they were some of my first work and on
 ## Emergisim
 
 Emergisim is UE4 powered VR medical training software with First Responder and Military applications. 
-I came onto the project a fair ways into development, and worked mostly on creating new medical treatments 
-to perform in the project, and level management systems (For keeping track of player progress).
+I came onto the project a fair ways into development, and worked on creating new medical treatments 
+to perform in the project, level management systems (For keeping track of player progress), and frameworks for new scenarios.
+```Due to this being an established project, I had to work in a way that did not alter the core logic.```
+
+## FireCPR
+
+### Focus 3 &  Wrist Trackers
+
+## Stryker
+
+###Oculus Quest 2
 
 
 ## Human Park
@@ -35,6 +44,10 @@ to perform in the project, and level management systems (For keeping track of pl
 [Human Park](./humanpark.html).
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+### Docker & Linux
+
+### Epic Game Services
 
 ## Header 2
 
