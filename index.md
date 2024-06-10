@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-#####Portfolio - Mitchell Lynn
+##### Portfolio - Mitchell Lynn
 
 # Who am I?
 
