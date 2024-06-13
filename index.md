@@ -29,12 +29,55 @@ I worked on a few projects at SAE, but as they were some of my first work and on
 
 ### Survivaur (2019)
 [Survivaur](https://kelinmiao.itch.io/survivaur) is a Dinosaur based local multiplayer brawler, two players select a dinosaur and fight to the death in a prehistoric setting.
-Survivaur was developed in Unity/C# by a team of 4, I developed the UI, Player controllers (Input Handling, Dinosaur stats), Game Logic (Game start/end handling, level transitions)
+Survivaur was developed in Unity/C# by a team of 4
+
+### Things I worked on
+-	UI
+	-	Level Select
+	-	Options Menu (Custom input mapping, Graphical & Audio Settings)
+	-	Tutorial Implementation
+-	Player Characters (Dinosaurs)
+	-	Special Abilities
+	-	Resources (Health, Stamina, Rage)
+	-	Interaction (Combat and Consumption)
+	-	Movement
+	-	2D Animation state machine
+-	Game Logic
+	-	Player lives
+	-	Respawning
+	-	Environmental hazards
+	-	Camera Positioning
+-	Packaging & Deployment
+
+### WebGL Build
+
+<iframe src="https://i.simmer.io/@Inum/~5d7f0929-d756-aa8c-950b-2d6488177100" style="width:960px;height:600px"></iframe>
+
 
 ### Office Horror (2019)
 [Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer), in it I made used Unreal Engine's AI System (EQS & Behaviour trees), 
 Level Streaming, Material Parameter Collections, Serialisation (Saving player progress), and Animation Blueprints
 
+### Things I worked on
+-	UI
+	-	Menus
+-	Saving & Loading progress
+-	Level Streaming
+-	Player Character
+	-	Movement
+	-	Animation Blueprint/Blending
+	-	Retargeting (Using the UE4 animation retargeter)
+	-	Projectile Launcher
+	-	Player Perspective
+	-	Health
+-	AI Characters
+	-	EQS perception
+	-	Behaviour Tree/Blackboard
+	-	Animation blueprints
+-	Game Logic
+	-	Objectives
+	-	Win/Lose conditions
+	
 ### Nature Walk (2020)
 Nature Walk was a work placement project developed for [LiminalVR](https://liminalvr.com) using Unity.
 
@@ -137,7 +180,8 @@ and Skeletal Mesh Ragdolls.
 
 
 
-
+##The Book
+A co-wrote a [book]() (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
 
 
 
