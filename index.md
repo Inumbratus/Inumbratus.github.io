@@ -25,7 +25,6 @@ I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system an
 # Projects
 
 ## University Projects
-I worked on a few projects at SAE, but as they were some of my first work and only small in scale, they've been grouped into a single section
 
 ### Survivaur (2019)
 [Survivaur](https://kelinmiao.itch.io/survivaur) is a Dinosaur based local multiplayer brawler, two players select a dinosaur and fight to the death in a prehistoric setting.
@@ -77,11 +76,14 @@ Level Streaming, Material Parameter Collections, Serialisation (Saving player pr
 -	Game Logic
 	-	Objectives
 	-	Win/Lose conditions
-	
-### Nature Walk (2020)
-Nature Walk was a work placement project developed for [LiminalVR](https://liminalvr.com) using Unity.
 
 ## Emergisim (2023)
+[Emergisim](https://www.spectrestudios.com.au/emergisim) is UE4 powered VR medical training software. 
+I came onto the project a fair ways into development, and worked on creating new medical treatments to perform in the project, 
+level management systems (For keeping track of player progress in scenarios), and frameworks for new scenarios.
+
+Emergisim has been adopted to varying degrees by a handful of goverment agencies globally, and it also had a commercial release via steam (Without any restricted content included).
+[First Responder VR Steam Page](https://store.steampowered.com/app/2289500/FirstResponderVR/)
 
 ##### Tech used
 *	Unreal Engine 4
@@ -90,30 +92,20 @@ Nature Walk was a work placement project developed for [LiminalVR](https://limin
 *	Oculus Rift CV1
 *	Steamworks
 
-### Overview
-[Emergisim](https://www.spectrestudios.com.au/emergisim) is UE4 powered VR medical training software with First Responder and Military applications. 
-I came onto the project a fair ways into development, and worked on creating new medical treatments to perform in the project, 
-level management systems (For keeping track of player progress in scenarios), and frameworks for new scenarios.
-
-Emergisim has been adopted to varying degrees by a handful of goverment agencies globally, and it also had a commercial release via steam (Without any restricted content included).
-[First Responder VR Steam Page](https://store.steampowered.com/app/2289500/FirstResponderVR/)
-
 ### RFDS
-RFDS is an extension of emergisim for the Royal Flying Doctor Service, with the specific purpose of training flight attendants how to react in the case of pilot incapacitation.
+RFDS is an extension of Emergisim for the Royal Flying Doctor Service, with the specific purpose of training flight attendants how to react in the case of pilot incapacitation.
 I worked on the scenario progression and additional interactible items required for the scenario (Flight controls panels, pilot's Headphones & Microphone)
 
 ## FireCPR
+FireCPR was a prototype CPR trainer for NSW Fire Services that I worked on extensively, it was built to target the [Vive Focus 3](https://www.vive.com/au/product/vive-focus3/overview/), 
+which is a mobile VR platform developed by HTC, as well as the associated [wrist trackers](https://www.vive.com/au/accessory/vive-wrist-tracker/).
+A large part of CPR training is how you pose your hands, so  hand tracking had to be used instead of the normal Focus 3 controllers, which is why the wrist trackers became a necessity. 
 
 ##### Tech used
 *	Unreal Engine 4
 *	HTC Vive Focus 3
 *	HTC Vive Wrist Trackers
 *	CPR Dummy
-
-### Overview
-FireCPR was a prototype CPR trainer for NSW Fire Services that I worked on extensively, it was built to target the [Vive Focus 3](https://www.vive.com/au/product/vive-focus3/overview/), 
-which is a mobile VR platform developed by HTC, as well as the associated [wrist trackers](https://www.vive.com/au/accessory/vive-wrist-tracker/).
-A large part of CPR training is how you pose your hands, so  hand tracking had to be used instead of the normal Focus 3 controllers, which is why the wrist trackers became a necessity. 
 
 ### Focus 3 &  Wrist Trackers
 Unforunately, the hand tracking on the Focus 3 was rather inaccurate at the time (It hadn't been released yet, I was working with a prototype), so in order to have any sort of accuracy
@@ -127,13 +119,16 @@ and the other around my wrist, and from that was able to accurately determine co
 *	HTC Vive Focus 3
 *	Oculus Quest 2
 
-### Overview
 Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
 
+## Project Tyrion
+[Project Tyrion](https://crisiscastvr.com) is VR diplomatic relations training software developed in UE4, with the specific purpose of preparing A 
+
+### Things I worked on
+-	Animation Blueprinting for the hands
+-	Inventory System
+
 ## Human Park
-
-[Human Park](./humanpark.html).
-
 After Spectre Studios was acquired by VHS, we were put to work developing a game based on a series of NFTs they were developing. I was charged with quickly creating a couple of initial prototypes, 
 first using ALSV4, then the Lyra project after it was released by Epic Games. These served adequately as Proof-of-Concept projects, and development then began on what would become Human Park.
 Human Park was a Networked Multiplayer obstacle course & social space
@@ -148,9 +143,11 @@ Human Park was a Networked Multiplayer obstacle course & social space
 *	Administrator Verification & Controls
 
 ### Docker & Linux
-Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker.
+Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
 
 ## Office Fight
+[Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
+and Skeletal Mesh Ragdolls.
 
 ##### Tech used
 *	Unreal Engine 5
@@ -158,10 +155,6 @@ Due to the intended large-scale release of Human Park, I was designated to creat
 *	Perforce
 *	Steamworks
 *	Epic Games Services
-
-### Overview
-[Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
-and Skeletal Mesh Ragdolls.
 
 ### Things I worked on
 -	Takedown system (motion warping)
@@ -175,13 +168,15 @@ and Skeletal Mesh Ragdolls.
 -	Throwable Objects
 	-	"Fling" throwing
 -	Activatable Objects
+-	A handful of cosmetics for the Employees
+	-	They were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below.
 
 ## Brawlers
 
 
 
 ##The Book
-A co-wrote a [book]() (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
+I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
 
 
 
