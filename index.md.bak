@@ -24,9 +24,7 @@ I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system an
 
 # Projects
 
-## University Projects
-
-### Survivaur (2019)
+## Survivaur (2019)
 [Survivaur](https://kelinmiao.itch.io/survivaur) is a Dinosaur based local multiplayer brawler, two players select a dinosaur and fight to the death in a prehistoric setting.
 Survivaur was developed in Unity/C# by a team of 4
 
@@ -48,14 +46,21 @@ Survivaur was developed in Unity/C# by a team of 4
 	-	Camera Positioning
 -	Packaging & Deployment
 
+### Tech used
+*	Unity
+*	C#
+* 	Github 
+*	Itch.io
+
 ### WebGL Build
 
 <iframe src="https://i.simmer.io/@Inum/~5d7f0929-d756-aa8c-950b-2d6488177100" style="width:960px;height:600px"></iframe>
 
 
-### Office Horror (2019)
-[Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer), in it I made used Unreal Engine's AI System (EQS & Behaviour trees), 
-Level Streaming, Material Parameter Collections, Serialisation (Saving player progress), and Animation Blueprints
+* * *
+
+## Office Horror (2019)
+[Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer) about a digruntled employee taking down a company he discovered was partaking in immoral work.
 
 ### Things I worked on
 -	UI
@@ -68,7 +73,7 @@ Level Streaming, Material Parameter Collections, Serialisation (Saving player pr
 	-	Retargeting (Using the UE4 animation retargeter)
 	-	Projectile Launcher
 	-	Player Perspective
-	-	Health
+	-	Health (Material Parameter Collection)
 -	AI Characters
 	-	EQS perception
 	-	Behaviour Tree/Blackboard
@@ -76,6 +81,13 @@ Level Streaming, Material Parameter Collections, Serialisation (Saving player pr
 -	Game Logic
 	-	Objectives
 	-	Win/Lose conditions
+	
+### Tech used
+*	Unnreal Engine 4
+* 	Github 
+*	Itch.io
+
+* * *
 
 ## Emergisim (2023)
 [Emergisim](https://www.spectrestudios.com.au/emergisim) is UE4 powered VR medical training software. 
@@ -85,16 +97,75 @@ level management systems (For keeping track of player progress in scenarios), an
 Emergisim has been adopted to varying degrees by a handful of goverment agencies globally, and it also had a commercial release via steam (Without any restricted content included).
 [First Responder VR Steam Page](https://store.steampowered.com/app/2289500/FirstResponderVR/)
 
-##### Tech used
+### Tech used
 *	Unreal Engine 4
 * 	Perforce
 *	HTC Vive
 *	Oculus Rift CV1
 *	Steamworks
 
+### Things I worked on
+-	Scenarios
+	-	Tutorials
+	-	Pilot Incapacitation
+	-	Mass Casualty
+	-	Tactical Combat Casualty Care (TCCC)
+	-	Ambulance Transit
+-	Player Character
+	-	Bag Storage
+		-	IFAK on hip
+		-	Larger bags on back
+	-	Hand animation implementation
+	-	Blood Sweeping
+	-	Crouched bag displacement
+-	Player Scoring
+	-	Serialisation
+-	UI
+	-	IMIST
+	-	Score/results
+-	Equipment
+	-	Treatment bags
+		-	IFAK
+		-	(Para)Medic bags
+		-	O2 bag
+	-	[QuikClot](https://quikclot.com) Wound Packing
+	-	Junctional Tourniquet
+	-	Pilot Equipment
+		-	Control Panel
+		-	Microphone
+		-	Headphones
+	-	[IGEL](https://au.intersurgical.com/info/igel)
+	-	[Laerdal Suction Unit](https://laerdal.com/au/products/medical-devices/airway-management/laerdal-suction-unit-lsu/) (LSU)
+	-	Penlight
+	-	Space Blanket
+	-	Oropharyngeal airway (OPA)
+	-	Tourniquet
+	-	Triage Tags
+	-	Stethoscope
+	-	Helmet
+	-	Body Armor
+	-	Gasmask
+	-	Night Vision Goggles (NVGs)
+	-	Bag-Valve Mask (BVM)
+	-	Blood Glucose Meter (BGM)
+-	Drugs
+	-	Ketamine
+-	Oculus Compatibility
+
+[Interesting tech and solutions used](./another-page.html).
+- Sphinx
+- Emergisim 2 Prototype
+	- Full body IK
+	- Bone based injuries & Treatments
+	- Replicated ragdolls
+	- Responsive vitals
+- [Cognitive3D](https://cognitive3d.com) Implementation
+
 ### RFDS
 RFDS is an extension of Emergisim for the Royal Flying Doctor Service, with the specific purpose of training flight attendants how to react in the case of pilot incapacitation.
 I worked on the scenario progression and additional interactible items required for the scenario (Flight controls panels, pilot's Headphones & Microphone)
+
+* * *
 
 ## FireCPR
 FireCPR was a prototype CPR trainer for NSW Fire Services that I worked on extensively, it was built to target the [Vive Focus 3](https://www.vive.com/au/product/vive-focus3/overview/), 
@@ -112,41 +183,81 @@ Unforunately, the hand tracking on the Focus 3 was rather inaccurate at the time
 in recording player input (For grading their performance), the wrist trackers were used, as they were far more accurate. So I strapped one of the two wrist trackers around a CPR dummy's neck, 
 and the other around my wrist, and from that was able to accurately determine compression depth, rate, and hand position for scoring.
 
+* * *
+
 ## Stryker
+Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
 
 ##### Tech used
 *	Unreal Engine 4
 *	HTC Vive Focus 3
 *	Oculus Quest 2
 
-Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
+### Things I worked on
+-	Scenarios
+
+* * *
 
 ## Project Tyrion
 [Project Tyrion](https://crisiscastvr.com) is VR diplomatic relations training software developed in UE4, with the specific purpose of preparing A 
 
+### Tech used
+*	Unreal Engine 4
+* 	Perforce
+*	HTC Vive
+
+### Things I worked on
+-	Animation Blueprinting for the hands
+-	Inventory System
+-	Player interaction
+
+* * *
 
 ## Human Park
 After Spectre Studios was acquired by VHS, we were put to work developing a game based on a series of NFTs they were developing. I was charged with quickly creating a couple of initial prototypes, 
 first using ALSV4, then the Lyra project after it was released by Epic Games. These served adequately as Proof-of-Concept projects, and development then began on what would become Human Park.
 Human Park was a Networked Multiplayer obstacle course & social space
 
+### Tech used
+*	Unreal Engine 4
+*	Perforce
+*	Epic Games Services
+
 ### Things I worked on (All Networked/Replicated)
-*	Parkour system using motion warping
-*	Player Customisation (Hats, Tails, Tattoos)
-*	Game logic (Keeping track of player progress, checkpoints)
-*	Equippables (Guns, Jetpacks)
-*	Player Emotes
-*	Vehicles (Forklift, Bicycle, Spaceship)
-*	Administrator Verification & Controls
+-	Player Animations
+	-	Parkour system (motion warping)
+	-	Emotes
+-	Player Customisation
+	-	Hats
+	-	Tails
+	-	Tattoos
+-	Game logic
+	-	Checkpoints
+	-	Scoring
+-	Environmental Hazards
+-	Equippables
+	-	Pistols
+	-	Sword
+	-	Jetpack
+	-	Jetpack with pistols
+-	Vehicles
+	-	Forklift
+	-	Bicycle
+	-	Space Ship
+	-	Drone
+	-	Hoverboard
+-	Administrator Verification & Controls
 
 ### Docker & Linux
 Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
 
+* * *
+
 ## Office Fight
 [Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
-and Skeletal Mesh Ragdolls.
+and Skeletal Mesh ragdolls.
 
-##### Tech used
+###Tech used
 *	Unreal Engine 5
 *	Blender
 *	Perforce
@@ -168,14 +279,20 @@ and Skeletal Mesh Ragdolls.
 -	A handful of cosmetics for the Employees
 	-	They were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below.
 
+[Interesting tech and solutions used](./another-page.html).
+- Reverse fling throwing
+- Blender foray
+
+* * *
+
 ## Brawlers
 
-
+* * *
 
 ##The Book
 I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
 
-
+* * *
 
 
 
