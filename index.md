@@ -30,9 +30,9 @@ I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system an
 [Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
 and Skeletal Mesh ragdolls.
 
-![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OfficeFightheader.jpg)
+![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OfficeFightheader.png)
 
-###Tech used
+### Tech used
 *	Unreal Engine 5
 *	Blender
 *	Perforce
