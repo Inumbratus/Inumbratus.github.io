@@ -24,68 +24,139 @@ I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system an
 
 # Projects
 
-## Survivaur (2019)
-[Survivaur](https://kelinmiao.itch.io/survivaur) is a Dinosaur based local multiplayer brawler, two players select a dinosaur and fight to the death in a prehistoric setting.
-Survivaur was developed in Unity/C# by a team of 4
+* * *
+
+## Office Fight
+[Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
+and Skeletal Mesh ragdolls.
+
+###Tech used
+*	Unreal Engine 5
+*	Blender
+*	Perforce
+*	Steamworks
+*	Epic Games Services
 
 ### Things I worked on
--	UI
-	-	Level Select
-	-	Options Menu (Custom input mapping, Graphical & Audio Settings)
-	-	Tutorial Implementation
--	Player Characters (Dinosaurs)
-	-	Special Abilities
-	-	Resources (Health, Stamina, Rage)
-	-	Interaction (Combat and Consumption)
-	-	Movement
-	-	2D Animation state machine
--	Game Logic
-	-	Player lives
-	-	Respawning
-	-	Environmental hazards
-	-	Camera Positioning
--	Packaging & Deployment
+-	Takedown system (motion warping)
+-	Employee animation blueprint
+-	Steamworks build deployment
+-	Steam Achievements
+-	Epic Games Services build deployment
+-	Mobile port
+-	Nintendo Switch Port
+-	Nearly all UI
+-	Throwable Objects
+	-	"Fling" throwing
+-	Activatable Objects
+-	A handful of cosmetics for the Employees
+	-	They were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below.
 
-### Tech used
-*	Unity
-*	C#
-* 	Github 
-*	Itch.io
-
-### WebGL Build
-
-<iframe src="https://i.simmer.io/@Inum/~5d7f0929-d756-aa8c-950b-2d6488177100" style="width:960px;height:600px"></iframe>
+[Interesting tech and solutions used](./another-page.html).
+- Reverse fling throwing
+- Blender foray
 
 
 * * *
 
-## Office Horror (2019)
-[Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer) about a digruntled employee taking down a company he discovered was partaking in immoral work.
+## Brawlers
+
+* * *
+
+##Game Development with Unreal Engine 5 (2023)
+I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
+
+* * *
+
+## Human Park (2022)
+After Spectre Studios was acquired by VHS, we were put to work developing a game based on a series of NFTs they were developing. I was charged with quickly creating a couple of initial prototypes, 
+first using ALSV4, then the Lyra project after it was released by Epic Games. These served adequately as Proof-of-Concept projects, and development then began on what would become [Human Park](https://humanpark.io).
+Human Park was a Networked Multiplayer obstacle course & social space deployed via XSolla
+
+### Tech used
+*	Unreal Engine 4
+*	Perforce
+*	Epic Games Services
+*	XSolla
+
+### Things I worked on (All Networked/Replicated)
+-	Player Animations
+	-	Parkour system (motion warping)
+	-	Emotes
+-	Player Customisation
+	-	Hats
+	-	Tails
+	-	Tattoos
+-	Game logic
+	-	Checkpoints
+	-	Scoring
+-	Environmental Hazards
+-	Equippables
+	-	Pistols
+	-	Sword
+	-	Jetpack
+	-	Jetpack with pistols
+-	Vehicles
+	-	Forklift
+	-	Bicycle
+	-	Space Ship
+	-	Drone
+	-	Hoverboard
+-	Administrator Verification & Controls
+
+[Interesting tech and solutions used](./another-page.html).
+- Niagara Animation props
+- 
+
+### Docker & Linux
+Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
+
+* * *
+
+## Project Tyrion
+[Project Tyrion](https://crisiscastvr.com) is VR diplomatic relations training software developed in UE4, with the specific purpose of preparing A 
+
+### Tech used
+*	Unreal Engine 4
+* 	Perforce
+*	HTC Vive
 
 ### Things I worked on
--	UI
-	-	Menus
--	Saving & Loading progress
--	Level Streaming
--	Player Character
-	-	Movement
-	-	Animation Blueprint/Blending
-	-	Retargeting (Using the UE4 animation retargeter)
-	-	Projectile Launcher
-	-	Player Perspective
-	-	Health (Material Parameter Collection)
--	AI Characters
-	-	EQS perception
-	-	Behaviour Tree/Blackboard
-	-	Animation blueprints
--	Game Logic
-	-	Objectives
-	-	Win/Lose conditions
-	
-### Tech used
-*	Unnreal Engine 4
-* 	Github 
-*	Itch.io
+-	Animation Blueprinting for the hands
+-	Inventory System
+-	Player interaction
+
+* * *
+
+## Stryker
+Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
+
+##### Tech used
+*	Unreal Engine 4
+*	HTC Vive Focus 3
+*	Oculus Quest 2
+
+### Things I worked on
+-	
+
+
+* * *
+
+## FireCPR
+FireCPR was a prototype CPR trainer for NSW Fire Services that I worked on extensively, it was built to target the [Vive Focus 3](https://www.vive.com/au/product/vive-focus3/overview/), 
+which is a mobile VR platform developed by HTC, as well as the associated [wrist trackers](https://www.vive.com/au/accessory/vive-wrist-tracker/).
+A large part of CPR training is how you pose your hands, so  hand tracking had to be used instead of the normal Focus 3 controllers, which is why the wrist trackers became a necessity. 
+
+##### Tech used
+*	Unreal Engine 4
+*	HTC Vive Focus 3
+*	HTC Vive Wrist Trackers
+*	CPR Dummy
+
+### Focus 3 &  Wrist Trackers
+Unforunately, the hand tracking on the Focus 3 was rather inaccurate at the time (It hadn't been released yet, I was working with a prototype), so in order to have any sort of accuracy
+in recording player input (For grading their performance), the wrist trackers were used, as they were far more accurate. So I strapped one of the two wrist trackers around a CPR dummy's neck, 
+and the other around my wrist, and from that was able to accurately determine compression depth, rate, and hand position for scoring.
 
 * * *
 
@@ -167,133 +238,71 @@ I worked on the scenario progression and additional interactible items required 
 
 * * *
 
-## FireCPR
-FireCPR was a prototype CPR trainer for NSW Fire Services that I worked on extensively, it was built to target the [Vive Focus 3](https://www.vive.com/au/product/vive-focus3/overview/), 
-which is a mobile VR platform developed by HTC, as well as the associated [wrist trackers](https://www.vive.com/au/accessory/vive-wrist-tracker/).
-A large part of CPR training is how you pose your hands, so  hand tracking had to be used instead of the normal Focus 3 controllers, which is why the wrist trackers became a necessity. 
-
-##### Tech used
-*	Unreal Engine 4
-*	HTC Vive Focus 3
-*	HTC Vive Wrist Trackers
-*	CPR Dummy
-
-### Focus 3 &  Wrist Trackers
-Unforunately, the hand tracking on the Focus 3 was rather inaccurate at the time (It hadn't been released yet, I was working with a prototype), so in order to have any sort of accuracy
-in recording player input (For grading their performance), the wrist trackers were used, as they were far more accurate. So I strapped one of the two wrist trackers around a CPR dummy's neck, 
-and the other around my wrist, and from that was able to accurately determine compression depth, rate, and hand position for scoring.
-
-* * *
-
-## Stryker
-Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
-
-##### Tech used
-*	Unreal Engine 4
-*	HTC Vive Focus 3
-*	Oculus Quest 2
+## Office Horror (2019)
+[Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer) about a digruntled employee taking down a company he discovered was partaking in immoral work.
 
 ### Things I worked on
--	
+-	UI
+	-	Menus
+-	Saving & Loading progress
+-	Level Streaming
+-	Player Character
+	-	Movement
+	-	Animation Blueprint/Blending
+	-	Retargeting (Using the UE4 animation retargeter)
+	-	Projectile Launcher
+	-	Player Perspective
+	-	Health (Material Parameter Collection)
+-	AI Characters
+	-	EQS perception
+	-	Behaviour Tree/Blackboard
+	-	Animation blueprints
+-	Game Logic
+	-	Objectives
+	-	Win/Lose conditions
+	
+### Tech used
+*	Unnreal Engine 4
+* 	Github 
+*	Itch.io
+
 
 * * *
 
-## Project Tyrion
-[Project Tyrion](https://crisiscastvr.com) is VR diplomatic relations training software developed in UE4, with the specific purpose of preparing A 
+## Survivaur (2019)
+[Survivaur](https://kelinmiao.itch.io/survivaur) is a Dinosaur based local multiplayer brawler, two players select a dinosaur and fight to the death in a prehistoric setting.
+Survivaur was developed in Unity/C# by a team of 4
+
+### Things I worked on
+-	UI
+	-	Level Select
+	-	Options Menu (Custom input mapping, Graphical & Audio Settings)
+	-	Tutorial Implementation
+-	Player Characters (Dinosaurs)
+	-	Special Abilities
+	-	Resources (Health, Stamina, Rage)
+	-	Interaction (Combat and Consumption)
+	-	Movement
+	-	2D Animation state machine
+-	Game Logic
+	-	Player lives
+	-	Respawning
+	-	Environmental hazards
+	-	Camera Positioning
+-	Packaging & Deployment
 
 ### Tech used
-*	Unreal Engine 4
-* 	Perforce
-*	HTC Vive
+*	Unity
+*	C#
+* 	Github 
+*	Itch.io
 
-### Things I worked on
--	Animation Blueprinting for the hands
--	Inventory System
--	Player interaction
+### WebGL Build
 
-* * *
+<iframe src="https://i.simmer.io/@Inum/~5d7f0929-d756-aa8c-950b-2d6488177100" style="width:960px;height:600px"></iframe>
 
-## Human Park
-After Spectre Studios was acquired by VHS, we were put to work developing a game based on a series of NFTs they were developing. I was charged with quickly creating a couple of initial prototypes, 
-first using ALSV4, then the Lyra project after it was released by Epic Games. These served adequately as Proof-of-Concept projects, and development then began on what would become Human Park.
-Human Park was a Networked Multiplayer obstacle course & social space
-
-### Tech used
-*	Unreal Engine 4
-*	Perforce
-*	Epic Games Services
-
-### Things I worked on (All Networked/Replicated)
--	Player Animations
-	-	Parkour system (motion warping)
-	-	Emotes
--	Player Customisation
-	-	Hats
-	-	Tails
-	-	Tattoos
--	Game logic
-	-	Checkpoints
-	-	Scoring
--	Environmental Hazards
--	Equippables
-	-	Pistols
-	-	Sword
-	-	Jetpack
-	-	Jetpack with pistols
--	Vehicles
-	-	Forklift
-	-	Bicycle
-	-	Space Ship
-	-	Drone
-	-	Hoverboard
--	Administrator Verification & Controls
-
-### Docker & Linux
-Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
 
 * * *
-
-## Office Fight
-[Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
-and Skeletal Mesh ragdolls.
-
-###Tech used
-*	Unreal Engine 5
-*	Blender
-*	Perforce
-*	Steamworks
-*	Epic Games Services
-
-### Things I worked on
--	Takedown system (motion warping)
--	Employee animation blueprint
--	Steamworks build deployment
--	Steam Achievements
--	Epic Games Services build deployment
--	Mobile port
--	Nintendo Switch Port
--	Nearly all UI
--	Throwable Objects
-	-	"Fling" throwing
--	Activatable Objects
--	A handful of cosmetics for the Employees
-	-	They were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below.
-
-[Interesting tech and solutions used](./another-page.html).
-- Reverse fling throwing
-- Blender foray
-
-* * *
-
-## Brawlers
-
-* * *
-
-##The Book
-I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
-
-* * *
-
 
 
 
