@@ -30,7 +30,7 @@ I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system an
 [Office Fight](https://store.steampowered.com/app/2747060/Office_Fight/) is a casual physics-based office destruction game. It makes extensive use of UE5's chaos physics system, for both environmental destruction
 and Skeletal Mesh ragdolls.
 
-![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OfficeFightheader.jpg)
+![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OfficeFightheader.png)
 
 ### Tech used
 *	Unreal Engine 5
@@ -52,12 +52,19 @@ and Skeletal Mesh ragdolls.
 	-	"Fling" throwing
 -	Activatable Objects
 -	A handful of cosmetics for the Employees
-	-	They were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below.
+-	Narrative structure
+	-	The setting of Office Fight is loosely based on Divine Comedy/Dante's Inferno, the floors of the Office represent the circles of hell, and the bosses of these floors are embodiments of the sin assosciated with their floor. This was my idea.
 
-[Interesting tech and solutions used](./another-page.html).
+
+### Interesting tech and solutions used
 - Reverse fling throwing
-- Blender foray
+	-	I created reverse "Fling" throwing in Office Fight using the projectile prediction system in UE5, which takes a start and an end point and tracing a projectile path between them using supplied parameters, and returns collision information based on this trace.
+	This is done by inverting the player's mouse/finger position in screen space, then getting a point on a line starting at the player's input position and ending below the level, closest to the object to be thrown, which gives a world-space location opposite the player's input, and using that as the end point in the projectile pathing calculation.
 
+- Blender foray
+	-	I'm not a 3D artist, but I learned some of the basics working on Office Fight. I did a elective animation class in Uni, and have worked quite extensively with UE's animation blueprints in the past, so I had a pretty good basis for skinning/rigging, but modelling took a bit longer to get the handle of. I made a handful of the cosmetics for the employees in the game, they were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below, these aren't all of the ones I worked on, but they're the most apparent ones.
+
+![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OF_Jester_Thumb.PNG) ![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OF_ShinobiSetThumb.PNG) ![](https://raw.githubusercontent.com/Inumbratus/Inumbratus.github.io/main/Assets/Images/OF_CardboardSetThumb.PNG)
 
 * * *
 
@@ -65,7 +72,7 @@ and Skeletal Mesh ragdolls.
 
 * * *
 
-##Game Development with Unreal Engine 5 (2023)
+## Game Development with Unreal Engine 5 (2023)
 I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
 
 * * *
@@ -73,7 +80,7 @@ I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-
 ## Human Park (2022)
 After Spectre Studios was acquired by VHS, we were put to work developing a game based on a series of NFTs they were developing. I was charged with quickly creating a couple of initial prototypes, 
 first using ALSV4, then the Lyra project after it was released by Epic Games. These served adequately as Proof-of-Concept projects, and development then began on what would become [Human Park](https://humanpark.io).
-Human Park was a Networked Multiplayer obstacle course & social space deployed via XSolla
+Human Park was a Networked Multiplayer obstacle course & social space deployed via XSolla.
 
 ### Tech used
 *	Unreal Engine 4
@@ -105,13 +112,14 @@ Human Park was a Networked Multiplayer obstacle course & social space deployed v
 	-	Drone
 	-	Hoverboard
 -	Administrator Verification & Controls
+-	Linux-based Server Images
 
-[Interesting tech and solutions used](./another-page.html).
+### Interesting tech and solutions used
 - Niagara Animation props
-- 
+	- Partway into development, we were asked to add props to the emotes in the game, the initial plan was to make a component based attachment system, which I heavily disliked for a number of reasons. As the Niagara FX system was just introduced, I tasked a Technical Artist with attempting to render a prop via the Niagara system, once that was shown to be possible, it was extremely easy for our technical animated to add a prop joint to the skeleton and animate it. 
 
-### Docker & Linux
-Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
+- Linux-based Server Images
+	- Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
 
 * * *
 
@@ -139,8 +147,8 @@ Stryker VR was a project designed to train people to make use of a [Stryker](htt
 *	Oculus Quest 2
 
 ### Things I worked on
--	
-
+-	Packaging & Deployment
+-	Scenario progression/game logic
 
 * * *
 
@@ -241,7 +249,12 @@ I worked on the scenario progression and additional interactible items required 
 * * *
 
 ## Office Horror (2019)
-[Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer) about a digruntled employee taking down a company he discovered was partaking in immoral work.
+[Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer) about a digruntled employee taking down a company he discovered was partaking in extremely immoral work.
+
+### Tech used
+*	Unnreal Engine 4
+* 	Github 
+*	Itch.io
 
 ### Things I worked on
 -	UI
@@ -262,18 +275,18 @@ I worked on the scenario progression and additional interactible items required 
 -	Game Logic
 	-	Objectives
 	-	Win/Lose conditions
-	
-### Tech used
-*	Unnreal Engine 4
-* 	Github 
-*	Itch.io
-
 
 * * *
 
 ## Survivaur (2019)
 [Survivaur](https://kelinmiao.itch.io/survivaur) is a Dinosaur based local multiplayer brawler, two players select a dinosaur and fight to the death in a prehistoric setting.
 Survivaur was developed in Unity/C# by a team of 4
+
+### Tech used
+*	Unity
+*	C#
+* 	Github 
+*	Itch.io
 
 ### Things I worked on
 -	UI
@@ -293,139 +306,9 @@ Survivaur was developed in Unity/C# by a team of 4
 	-	Camera Positioning
 -	Packaging & Deployment
 
-### Tech used
-*	Unity
-*	C#
-* 	Github 
-*	Itch.io
-
 ### WebGL Build
 
 <iframe src="https://i.simmer.io/@Inum/~5d7f0929-d756-aa8c-950b-2d6488177100" style="width:960px;height:600px"></iframe>
 
 
 * * *
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
