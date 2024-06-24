@@ -137,7 +137,7 @@ Human Park was a Networked Multiplayer obstacle course & social space deployed v
 ## Stryker
 Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
 
-##### Tech used
+### Tech used
 *	Unreal Engine 4
 *	HTC Vive Focus 3
 *	Oculus Quest 2
@@ -153,7 +153,7 @@ FireCPR was a prototype CPR trainer for NSW Fire Services that I worked on exten
 which is a mobile VR platform developed by HTC, as well as the associated [wrist trackers](https://www.vive.com/au/accessory/vive-wrist-tracker/).
 A large part of CPR training is how you pose your hands, so  hand tracking had to be used instead of the normal Focus 3 controllers, which is why the wrist trackers became a necessity. 
 
-##### Tech used
+### Tech used
 *	Unreal Engine 4
 *	HTC Vive Focus 3
 *	HTC Vive Wrist Trackers

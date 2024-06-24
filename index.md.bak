@@ -68,10 +68,6 @@ and Skeletal Mesh ragdolls.
 
 * * *
 
-## Brawlers
-
-* * *
-
 ## Game Development with Unreal Engine 5 (2023)
 I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
 
@@ -141,7 +137,7 @@ Human Park was a Networked Multiplayer obstacle course & social space deployed v
 ## Stryker
 Stryker VR was a project designed to train people to make use of a [Stryker](https://www.stryker.com/us/en/index.html) brand AED, and their stretchers.
 
-##### Tech used
+### Tech used
 *	Unreal Engine 4
 *	HTC Vive Focus 3
 *	Oculus Quest 2
