@@ -6,13 +6,15 @@ Last Update: 3/2025
 
 # Who am I?
 
-I'm a Programmer, or "Software Engineer" if we're being fancy. I started programming in 2019, and so as of writing this have ~6 years of experience in the field. 
+I'm a Programmer, or "Software Engineer" if we're being fancy. I started programming in 2019, and so as of writing this have ~5 years of experience in the field. 
 I completed a Diploma and Bachelor's degree of Game Development (Programming) at SAE Sydney, which took 2 years, and then worked for Spectre Studios, before it was acquired by
 Virtually Human Studios (VHS), then at Fenix Studios, which was formed from many of the people who made up Spectre Studios originally. 
 
 ## Experience
 
-I've primarily used UE4/5's Blueprint system and C++ over the last 5 years, but I've started using Redot for personal projects.
+I've primarily used UE4/5's Blueprint system and C++ over the last 5 years, but have started using Redot for personal projects.
+I've mostly used perforce for source control professionally, privately I use Github.
+I've personally shipped projects through Epic Games Store, Steam, XSolla, and Google Play.
 
 *	Unreal Engine (4/5)
 *	C++
