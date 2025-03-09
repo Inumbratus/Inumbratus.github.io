@@ -1,1 +1,2 @@
-bundle exec jekyll serve
+jekyll serve
+start http://localhost:4000
