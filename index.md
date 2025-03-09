@@ -2,23 +2,24 @@
 layout: default
 ---
 ##### Portfolio - Mitchell Lynn
-Last Update: 6/2024
+Last Update: 3/2025
 
 # Who am I?
 
-I'm a Programmer, or "Software Engineer" if we're being fancy. I started programming in 2019, and so as of writing this have 5 years of experience in the field. 
+I'm a Programmer, or "Software Engineer" if we're being fancy. I started programming in 2019, and so as of writing this have ~6 years of experience in the field. 
 I completed a Diploma and Bachelor's degree of Game Development (Programming) at SAE Sydney, which took 2 years, and then worked for Spectre Studios, before it was acquired by
 Virtually Human Studios (VHS), then at Fenix Studios, which was formed from many of the people who made up Spectre Studios originally. 
 
 ## Experience
 
-I've used Unity & C#, but my preference is certainly UE4/5's Blueprint system and C++.
+I've primarily used UE4/5's Blueprint system and C++ over the last 5 years, but I've started using Redot for personal projects.
 
 *	Unreal Engine (4/5)
 *	C++
 *	Github
 *	Perforce
 *	Blender
+*	Godot (Redot)
 *   Unity
 *   C#
 
@@ -59,7 +60,7 @@ and Skeletal Mesh ragdolls.
 ### Interesting tech and solutions used
 - Reverse fling throwing
 	-	I created reverse "Fling" throwing in Office Fight using the projectile prediction system in UE5, which takes a start and an end point and tracing a projectile path between them using supplied parameters, and returns collision information based on this trace.
-	This is done by inverting the player's mouse/finger position in screen space, then getting a point on a line starting at the player's input position and ending below the level, closest to the object to be thrown, which gives a world-space location opposite the player's input, and using that as the end point in the projectile pathing calculation.
+	I achieved this by inverting the player's mouse/finger position in screen space, then getting a point on a line starting at this inversion of the player's input position and ending below the level, closest to the object selected to be thrown, which gives a world-space location opposite the player's input, and using then that as the end point in the projectile pathing calculation.
 
 - Blender foray
 	-	I'm not a 3D artist, but I learned some of the basics working on Office Fight. I did a elective animation class in Uni, and have worked quite extensively with UE's animation blueprints in the past, so I had a pretty good basis for skinning/rigging, but modelling took a bit longer to get the handle of. I made a handful of the cosmetics for the employees in the game, they were based on the existing models made by an actual 3D Artist, but I did make and skin the outfits pictured below, these aren't all of the ones I worked on, but they're the most apparent ones.
@@ -69,7 +70,7 @@ and Skeletal Mesh ragdolls.
 * * *
 
 ## Game Development with Unreal Engine 5 (2023)
-I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of Blueprints in UE5
+I co-wrote a [book](https://bpbonline.com/products/game-development-with-unreal-engine-5?_pos=1&_sid=82f4a319d&_ss=r) (with one of my uni teachers who was briefly a coworker) about the basics of development using Blueprints in UE5
 
 * * *
 
@@ -112,7 +113,7 @@ Human Park was a Networked Multiplayer obstacle course & social space deployed v
 
 ### Interesting tech and solutions used
 - Niagara Animation props
-	- Partway into development, we were asked to add props to the emotes in the game, the initial plan was to make a component based attachment system, which I heavily disliked for a number of reasons. As the Niagara FX system was just introduced, I tasked a Technical Artist with attempting to render a prop via the Niagara system, once that was shown to be possible, it was extremely easy for our technical animated to add a prop joint to the skeleton and animate it. 
+	- Partway into development, we were asked to add props to the emotes in the game, the initial plan was to make a component based attachment system, which I heavily disliked for a number of reasons. As the Niagara FX system was just introduced, I tasked a Technical Artist with attempting to render a prop via the Niagara system, once that was shown to be possible, it was extremely easy for our technical animator to add a prop joint to the skeleton and animate it, then we were able to use animation notifiers to render the props, allowing for the entire system to be neatly contained within animation sequences. 
 
 - Linux-based Server Images
 	- Due to the intended large-scale release of Human Park, I was designated to create linux-based server images for the project, which I accomplished using UE4's Linux toolchain alongside Docker, the images were then deployed using [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
@@ -120,7 +121,7 @@ Human Park was a Networked Multiplayer obstacle course & social space deployed v
 * * *
 
 ## Project Tyrion
-[Project Tyrion](https://crisiscastvr.com) is VR diplomatic relations training software developed in UE4, with the specific purpose of preparing A 
+[Project Tyrion](https://crisiscastvr.com) is VR diplomatic relations training software developed in UE4, with the specific purpose of preparing the user for engaging in diplomatic engagements with nomads in West Africa.
 
 ### Tech used
 *	Unreal Engine 4
@@ -160,7 +161,7 @@ A large part of CPR training is how you pose your hands, so  hand tracking had t
 *	CPR Dummy
 
 ### Focus 3 &  Wrist Trackers
-Unforunately, the hand tracking on the Focus 3 was rather inaccurate at the time (It hadn't been released yet, I was working with a prototype), so in order to have any sort of accuracy
+Unfortunately, the hand tracking on the Focus 3 was rather inaccurate at the time (It hadn't been released yet, I was working with a prototype), so in order to have any sort of accuracy
 in recording player input (For grading their performance), the wrist trackers were used, as they were far more accurate. So I strapped one of the two wrist trackers around a CPR dummy's neck, 
 and the other around my wrist, and from that was able to accurately determine compression depth, rate, and hand position for scoring.
 
@@ -229,8 +230,7 @@ Emergisim has been adopted to varying degrees by a handful of goverment agencies
 	-	Ketamine
 -	Oculus Compatibility
 
-[Interesting tech and solutions used](./another-page.html).
-- Sphinx
+### Interesting tech and solutions used
 - Emergisim 2 Prototype
 	- Full body IK
 	- Bone based injuries & Treatments
@@ -243,6 +243,8 @@ RFDS is an extension of Emergisim for the Royal Flying Doctor Service, with the 
 I worked on the scenario progression and additional interactible items required for the scenario (Flight controls panels, pilot's Headphones & Microphone)
 
 * * *
+
+# University Projects
 
 ## Office Horror (2019)
 [Office Horror](https://inumbratus.itch.io/office-horror) Is a horror game made using UE4 by a team of 2 (Me and a designer) about a digruntled employee taking down a company he discovered was partaking in extremely immoral work.
